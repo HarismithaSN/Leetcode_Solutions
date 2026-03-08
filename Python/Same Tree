@@ -1,0 +1,16 @@
+p = eval(input())
+q = eval(input())
+j = 0
+ind = 1
+for i in p:
+    if i == q[j]:
+        j+=1
+    elif i == 'null':
+        ind =0
+    else:
+        ind = 0
+        break
+if ind:
+    print("true")
+else:
+    print("false")
