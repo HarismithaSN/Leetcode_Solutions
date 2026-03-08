@@ -1,0 +1,12 @@
+head = [1,1,2,3,3]
+dict1 = {}
+for i in head:
+    if i in dict1:
+        dict1[i]+= 1
+    else:
+        dict1[i] = 1
+new = []
+for i,j in dict1.items():
+    if j >= 1:
+        new.append(i)
+print(new)
