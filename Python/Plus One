@@ -1,0 +1,11 @@
+class Solution(object):
+    def plusOne(self, digits):
+        number = 0
+        for d in digits:
+            number = number * 10 + d
+        number += 1
+        result = []
+        for ch in str(number):
+            result.append(int(ch))
+        
+        return result
